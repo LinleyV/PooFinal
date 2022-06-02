@@ -1,0 +1,15 @@
+We need to consider all the parameters of the differential equation. For each class we know the formula f that will give us the time evolution. We need to decide what attributs we will give to the class
+and what methods. Our choice will be to use as attributs, the exact values we need:
+1). t
+2). dt
+3). P (vector)
+4). dP/dt (vector)
+5). function f.
+We see that the attributs from 3 to 5 are actually related to an "ObjetMobile" and that's normal because we want to study the mouvement of such an object.
+Thus, the class integrateur will have as protected members the parameters of the differemtial equation. (time and a pointet towards a mobile object).
+We won't provide a default constructor because we need to have a precise set of information in order to integrate.
+In the distructor we will delete the pointer that we created.
+Now we defined a basic class of integrators. Keeping in mind that we will have to approach different types of differential equations, we will need different ways to do our integration, meaning different methods, each suited for
+particular cases. In our point of view, that is what we call "specialisation". Therefore, each type of integrators will be specialised, but at its base, will be an integrator. Thats why, the other classes we will create (ex. Integrateur Euler-Cromer)
+will inherit the attributs of their parent-class, Integrateurs.
+Cromer -> 

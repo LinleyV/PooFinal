@@ -1,0 +1,4 @@
+Question P11.1:
+Our object, the Ventilator will be composed of two parts. Now that relation can be understood in two different ways. Either we consider that the parts that form the ventilator
+are integrated and belong to the current instance, case in which we talk about "heritage multiple", or we can see the parts as distinct objects from the current instance, objects that can exist
+on their own (brique), thus we use pointers to this objects to describe the ventilator. We chose to represent this link with a relation of "heritage multiple".

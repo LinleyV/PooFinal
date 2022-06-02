@@ -1,0 +1,7 @@
+We chose to name our class "ForceField" instead of "ChampsForces".
+As for the atributs, we will use the definitions:
+1). intensite-intensity
+2). agit_sur() - interacts_on()
+As for the method "interacts_on()" for the moment we decided to consider it as a "void" function because it must modify the
+parametre "Balle" and does not return anything. We also thought of implementing the function as a bool, to test if the operation was succesfull,
+but it seems more appropriate to do this test as a part of a "try-catch" block. 

@@ -1,0 +1,4 @@
+Question 8.1:
+We can easily see that, due to the fact that the function will have a different comportement regarding different types of mobile objects, it will
+have a polymorphic nature, so that it will allow the process called "specialisation" for each type of objet mobile. As for the return value, for once it will
+draw graphs and also write in an output file( or on the cout), thus it will modify the output.

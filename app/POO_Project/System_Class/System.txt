@@ -1,0 +1,11 @@
+Qestion P8.2:
+For the system class, we can create as one of its attributs a vector of pointers to mobile objects. This way, we can utilise the full potential of polymorphism.
+We well have both a way of "safe-guarding" the mobile objects in the memory, as a way to use the same code in order to obtain different comportaments.
+Question P8.3:
+Since we are working with pointers( the source of all evil on Earth), there are many things we need to consider. First of all we need to think about the life spawn of the pointers, in orther to avoid errors when leaving
+the body of functions and wanting to use certain pointers declared within. Second, we need to be carefull about memory and surface copies. Now, the best option may seem the smart pointers, the unique pointers, as they dont allow the copy and they
+take care of the memory problemes. However, keeping in mind that we want to keep a general approach, we will chose the liberty given by the C-pointers, for the moment, eventhough that means more work. In the future, if we see fit, we can easily swap the C-pointers with smart pointers.
+Question P8.4:
+This is a very important class, as it will handle the interaction of all the other classes that are included in this project. Therefore, it will need plenty of methodes, getters/ setters that globaly modify the vector of pointers, or just modify a position. A time management function, to call the integrators, etc.
+We chose to keep two separate vectors, one for the obstacles, the other for mobile objects. Therefore, we will need to make "the same function" (example - getPosition) for both of them. For the moment, we added just to functions, that push a new pointer in each vector, but whenever we will add a new function, we will come back to this answer file
+to describe its utility and comportament. We also want to be able to integrate, to change a pointer at a specific position, to maybe delete a single component. Thus, we decided to add the interface!

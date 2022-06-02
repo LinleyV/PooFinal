@@ -1,0 +1,19 @@
+First of all we decided to use a typedef for a vector called my_vector since we are going to use multiple vectors in this class.(just to be safe)
+However, all of the vector-parameters(position, velocity) will have the type of "Vecteur".
+We changed the name of the atributs:
+1). position - position
+2). vitesse - velocity
+3). rayon - radius
+4). force - force
+
+We decided that the default constructor is not necessary because an empty ball( no position, no velocity, no mass, no radius, etc) has no physical meaning).
+Thus, we wont provide a default constructor.
+We decided that we will provide two types of initialisation:
+1). A constructor with all the parameters.
+2). A constructor that takes only the radius and the mass, and initialises all the vectors with 0 -> {0.0,0.0,0.0}
+For the moment we won't do any specific action when we destroy an instance, so the default destructor will be enough.
+Now, we need to decide how what approach we will take towards the "masse" and "masse volumique" problem. It is clear that the two parameters are linked by the mathematical formula
+so, we decied that we will consider the "masse"(FROM NOW ON REFFERED TO AS mass) as an atribut and the "masse volumique"(FROM NOW ON REFFERED TO AS density) as a method.
+This method is called "find_density" and it will calculate the volumetric mass in respect to the given formula.
+We also decided to create functions that return the value of each atributn (accesseurs) that have the name of: get_NAME-OF-ATRIBUT.
+We chose to refer to the method ajoute_force() as add_force().

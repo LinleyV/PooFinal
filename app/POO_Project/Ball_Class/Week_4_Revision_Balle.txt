@@ -1,0 +1,5 @@
+The first thing to do is do ensure the "comunication between the two classes". As the class "Balle" will be, in fact, a mobile object, it will enherit all the atributs
+and methods of the parent class. Therefore, the attributs and the methods have no meaning here. Now, when we removed the attributs, we are left with a
+problem regarding our constructor. Thus, we will need to fix it, using the constructor of the super-class. Lastlty, there are methods (ex. "find_density", "get_radius")
+that we won't use, because these methods will be integrated in the parent class and for the moment there is no reason to shadow them.
+
